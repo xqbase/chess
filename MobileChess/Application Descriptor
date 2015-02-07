@@ -1,0 +1,11 @@
+MobileChess-Debug: false
+MIDlet-1: Mobile Chess,/images/chess.png,chess.ChessMIDlet
+MIDlet-Jar-URL: MobileChess.jar
+MIDlet-Icon: /images/chess.png
+MicroEdition-Configuration: CLDC-1.0
+MIDlet-Version: 1.20
+MIDlet-Vendor: www.chess-wizard.com
+MIDlet-Name: MobileChess
+MIDlet-Description: Mobile Chess
+MIDlet-Info-URL: http://www.chess-wizard.com/
+MicroEdition-Profile: MIDP-2.0

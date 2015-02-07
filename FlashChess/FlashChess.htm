@@ -1,0 +1,90 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Microsoft FrontPage Express 2.0">
+<title></title>
+</head>
+
+<body>
+<div align="center"><center>
+
+<table border="0">
+    <tr>
+        <td><object id="FlashChess"
+        classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+        codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0"
+        align="middle" border="0" width="336" height="336"><param
+        name="allowScriptAccess" value="always"><param
+        name="allowFullScreen" value="false"><param name="movie"
+        value="FlashChess.swf"><param name="quality" value="high"><param
+        name="menu" value="false"><embed src="FlashChess.swf" align="middle" border="0" width="336" height="336" name="FlashChess" quality="high" allowscriptaccess="always" allowfullscreen="false" menu="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" /></object></td>
+        <td><font size="3"><strong></strong></font>&nbsp;</td>
+        <td valign="top"><dl>
+            <dt><font size="3"><strong><script
+                language="JavaScript"><!--
+var FlashChess = document["FlashChess"];
+
+var startupFens = [
+  "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
+  "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/R1BQKBNR w KQkq - 0 1",
+  "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/1NBQKBNR w KQkq - 0 1",
+  "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNB1KBNR w KQkq - 0 1",
+];
+
+function restart_click() {
+  FlashChess.restart(selMoveMode.selectedIndex, startupFens[selHandicap.selectedIndex]);
+}
+
+function retract_click() {
+  FlashChess.retract();
+}
+
+function level_change() {
+  FlashChess.setLevel(selLevel.selectedIndex);
+}
+
+function sound_click() {
+  FlashChess.setSound(chkSound.checked);
+}
+// --></script>Player Takes:</strong></font></dt>
+            <dt><font size="3"><strong><select name="selMoveMode"
+                size="3" id="selMoveMode">
+                    <option selected value="0">White&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                    <option value="1">Black&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                    <option value="2">Both&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                </select></strong></font></dt>
+            <dt><font size="3"><strong>White Offers:</strong></font></dt>
+            <dt><font size="3"><strong><select name="selHandicap"
+                size="4" id="selHandicap">
+                    <option selected value="0">No Odds</option>
+                    <option value="1">A Knight Odds</option>
+                    <option value="2">A Rook Odds</option>
+                    <option value="3">A Queen Odds</option>
+                </select></strong></font></dt>
+            <dt><font color="#008080" size="3"><strong><input
+                type="button" value="    Restart    "
+                onclick="restart_click()"></strong></font></dt>
+            <dt><font color="#008080" size="3"><strong><input
+                type="button" value="    Retract    "
+                onclick="retract_click()"></strong></font></dt>
+            <dt><font size="3"><strong></strong></font>&nbsp;</dt>
+            <dt><font size="3"><strong>Level:</strong></font></dt>
+            <dt><font size="3"><strong><select name="selLevel"
+                size="3" id="selLevel" onchange="level_change()">
+                    <option selected value="0">Beginner&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                    <option value="1">Amateur&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                    <option value="2">Expert&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</option>
+                </select></strong></font></dt>
+            <dt><font size="3"><strong></strong></font>&nbsp;</dt>
+            <dt><font size="3"><strong><input type="checkbox"
+                checked name="chkSound" id="chkSound"
+                onclick="sound_click()"><label for="chkSound">Sound</label></strong></font></dt>
+        </dl>
+        </td>
+    </tr>
+</table>
+</center></div>
+</body>
+</html>
