@@ -604,13 +604,8 @@ public class Position implements Serializable {
 				if (y > RANK_BOTTOM) {
 					break;
 				}
-			} else if (c >= '1' && c <= '9') {
-				for (int k = 0; k < (c - '0'); k ++) {
-					if (x >= FILE_RIGHT) {
-						break;
-					}
-					x ++;
-				}
+			} else if (c >= '1' && c <= '8') {
+				x += (c - '0');
 			} else if (c >= 'A' && c <= 'Z') {
 				if (x <= FILE_RIGHT) {
 					if (c != 'P' || (y != RANK_TOP && y != RANK_BOTTOM)) {

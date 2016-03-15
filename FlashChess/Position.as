@@ -1,4 +1,4 @@
-﻿/*
+/*
 Position.as - Source Code for Flash Chess, Part I
 
 Flash Chess - a Chess Program for Web
@@ -975,14 +975,8 @@ package {
 					if (y > RANK_BOTTOM) {
 						break;
 					}
-				} else if (c >= '1' && c <= '9') {
-					var kk:int = c.charCodeAt() - '0'.charCodeAt();
-					for (var k:int = 0; k < kk; k ++) {
-						if (x >= FILE_RIGHT) {
-							break;
-						}
-						x ++;
-					}
+				} else if (c >= '1' && c <= '8') {
+					x += (c.charCodeAt() - '0'.charCodeAt());
 				} else if (c >= 'A' && c <= 'Z') {
 					if (x <= FILE_RIGHT) {
 						if (c != 'P' || (y != RANK_TOP && y != RANK_BOTTOM)) {
